@@ -51,4 +51,4 @@ https://www.npmjs.com/package/iban-validator-js
 
 ## Aufgabe 9 (Nur Klausurschreiber)
 
-Der Gewünschte Betrag auf der Seite Geldanlegen soll automatisch auf das neue Konto eingezahlt werden. Wenn man dananch zurück auf die Kontenübersicht geht, wir der neue Betrag (also Anfangssaldo + Betrag aus Geldanlegen) angezeigt.
+Der gewünschte Betrag auf der Seite Geldanlegen soll auf Kundenwunsch auf das neue Konto eingezahlt werden. Stellen Sie dem Kunden also die Frage, ob er den Betrag direkt auf das Konto einzahlen will. Der Kunde könnte in einer weiteren Textbox nach "ja" oder "nein" gefragt werden, was dann im Falle von "ja" dazu führt, dass bei der Rückkehr zur Kontenübersicht der neue Betrag (also Anfangssaldo + Betrag aus Geldanlegen) angezeigt wird.
