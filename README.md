@@ -1,101 +1,54 @@
-# Try Out Development Containers: Node.js
+# Klausur/Test 2024/2025 Nr. 3
 
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-node)
 
-A **development container** is a running container with a well-defined tool/runtime stack and its prerequisites. You can try out development containers with **[GitHub Codespaces](https://github.com/features/codespaces)** or **[Visual Studio Code Dev Containers](https://aka.ms/vscode-remote/containers)**.
+## Aufgabe 1
 
-This is a sample project that lets you try out either option in a few easy steps. We have a variety of other [vscode-remote-try-*](https://github.com/search?q=org%3Amicrosoft+vscode-remote-try-&type=Repositories) sample projects, too.
+Erstellen Sie aus diesem Template ein eigenes Projekt namens K2_20250324_Nachname_Vorname bzw. T2_20250324_Nachname_Vorname.
+Die App ist im Wesentlichen die App aus dem Unterricht ohne große Änderungen.
+Am Ende müssen Sie Ihr Projekt commiten und pushen. Senden Sie mir den Link in Teams zu.
 
-> **Note:** If you already have a Codespace or dev container, you can jump to the [Things to try](#things-to-try) section.
+## Aufgabe 2
 
-## Setting up the development container
+Beantworten Sie die folgenden Frage hier direkt im Text: Welche Aufgabe haben cookies in unserer Banking-App?
 
-### GitHub Codespaces
-Follow these steps to open this sample in a Codespace:
-1. Click the **Code** drop-down menu.
-2. Click on the **Codespaces** tab.
-1. Click **Create codespace on main** .
+## Aufgabe 3
 
-For more info, check out the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace#creating-a-codespace).
-  
-### VS Code Dev Containers
+Auf der Seite Hilfe sind vier Fehler eingebaut. Finden und korrigieren Sie die Fehler. Schreiben Sie zu jedem Fehler eine Kommentarzeile, in der Sie schreiben, was Sie korrigiert haben.
 
-If you already have VS Code and Docker installed, you can click the badge above or [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-node) to get started. Clicking these links will cause VS Code to automatically install the Dev Containers extension if needed, clone the source code into a container volume, and spin up a dev container for use.
+## Aufgabe 4
 
-Follow these steps to open this sample in a container using the VS Code Dev Containers extension:
+Die Seite "AGB" lässt sich nicht öffnen. Korrigieren Sie das.
 
-1. If this is your first time using a development container, please ensure your system meets the pre-reqs (i.e. have Docker installed) in the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
+## Aufgabe 5
 
-2. To use this repository, you can either open the repository in an isolated Docker volume:
+Die Seite Postfach lässt sich im Browser aufrufen, auch wenn der Kunde nicht in der App angemeldet ist. Korrigieren Sie das.
 
-    - Press <kbd>F1</kbd> and select the **Dev Containers: Try a Sample...** command.
-    - Choose the "Node" sample, wait for the container to start, and try things out!
-        > **Note:** Under the hood, this will use the **Dev Containers: Clone Repository in Container Volume...** command to clone the source code in a Docker volume instead of the local filesystem. [Volumes](https://docs.docker.com/storage/volumes/) are the preferred mechanism for persisting container data.
 
-    Or open a locally cloned copy of the code:
+## Aufgabe 6
 
-   - Clone this repository to your local filesystem.
-   - Press <kbd>F1</kbd> and select the **Dev Containers: Open Folder in Container...** command.
-   - Select the cloned copy of this folder, wait for the container to start, and try things out!
+Ergänzen Sie bei dem Kundenobjekt eine konkrete E-Mailadresse. 
 
-## Things to try
+Der Kunde soll seine Mailadresse selbst ändern können. Wenn die vom Kunden eingegebene Mail keine gültige Mail-Adresse ist, dann wird ein enstprechende Meldung angezeigt. Wenn die Adresse gültig ist, dann wird die vom Kunden angegebene Adresse auf der Mail-Seite angezeigt.
 
-Once you have this sample opened, you'll be able to work with it like you would locally.
 
-Some things to try:
+## Aufgabe 7
 
-1. **Edit:**
-   - Open `server.js`
-   - Try adding some code and check out the language features. 
-   - Make a spelling mistake and notice it is detected. The [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) extension was automatically installed because it is referenced in `.devcontainer/devcontainer.json`.
-   - Also notice that `eslint` and the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) are installed. Tools are installed in the `mcr.microsoft.com/devcontainers/javascript-node` image and Dev Container settings and metadata are automatically picked up from [image labels](https://containers.dev/implementors/reference/#labels).
+Die Seite Geldanlegen berechnet die Zinsen nicht korrekt.
 
-2. **Terminal:** Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>\`</kbd> and type `uname` and other Linux commands from the terminal window.
-3. **Build, Run, and Debug:**
-   - Open `server.js`
-   - Add a breakpoint (e.g. on line 20).
-   - Press <kbd>F5</kbd> to launch the app in the container.
-   - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
-   - Continue (<kbd>F5</kbd>). You can connect to the server in the container by either: 
-      - Clicking on `Open in Browser` in the notification telling you: `Your service running on port 3000 is available`.
-      - Clicking the globe icon in the 'Ports' view. The 'Ports' view gives you an organized table of your forwarded ports, and you can access it with the command **Ports: Focus on Ports View**.
-   - Notice port 3000 in the 'Ports' view is labeled "Hello Remote World." In `devcontainer.json`, you can set `"portsAttributes"`, such as a label for your forwarded ports and the action to be taken when the port is autoforwarded. 
-      - If we didn't know the port was 3000, we could've used a regex instead of "3000" in the `"portsAttributes"`, such as ".+/server.js".
+Der Zinssatz beträgt stets 10%. Bauen Sie einen Hinweis auf die Zinsen fest auf der Seite ein.
 
-   > **Note:** In Dev Containers, you can access your app at `http://localhost:3000` in a local browser. But in a browser-based Codespace, you must click the link from the notification or the `Ports` view so that the service handles port forwarding in the browser and generates the correct URL.
-   
-4. **Rebuild or update your container**
+Ändern Sie die Funktionalität so, dass der Kunde seinen Wunschbetrag tatsächlich eingeben kann, um die Zinsen dann zu berechnen. 
 
-   You may want to make changes to your container, such as installing a different version of a software or forwarding a new port. You'll rebuild your container for your changes to take effect. 
-   
-   **Open browser automatically:** As an example change, let's update the `portsAttributes` in the `.devcontainer/devcontainer.json` file to open a browser when our port is automatically forwarded.
-   
-   - Open the `.devcontainer/devcontainer.json` file.
-   - Modify the `"onAutoForward"` attribute in your `portsAttributes` from `"notify"` to `"openBrowser"`.
-   - Press <kbd>F1</kbd> and select the **Dev Containers: Rebuild Container** or **Codespaces: Rebuild Container** command so the modifications are picked up.
+## Aufgabe 8 (nur Klausurschreiber)
 
-5. **Install the GitHub CLI using a Dev Container Feature:**
-   - Press <kbd>F1</kbd> and select the **Dev Containers: Configure Container Features...** or **Codespaces: Configure Container Features...** command.
-   - Type "github" in the text box at the top.
-   - Check the check box next to "GitHub CLI" (published by devcontainers) 
-   - Click OK
-   - Press <kbd>F1</kbd> and select the **Dev Containers: Rebuild Container** or **Codespaces: Rebuild Container** command so the modifications are picked up.
+In der Kontenübersicht soll der Kunde selbst ein Konto einrichten dürfen. Zu einem Konto gehört eine IBAN und ein Saldo. Bauen Sie die Klasse ein. Bauen Sie das Formular auf die Seite, mit dem die Daten in einem Kontoobjekt instanziiert werden. Nach dem Absenden bekommt der Kunde die Daten seines neues Kontos angezeigt.
+Beim Neuanlegen eines Kontos bekommt der Kunde 10 Euro als Anfangssaldo geschenkt.
 
-## Contributing
+Der Kunde darf die IBAN selbst wählen, aber für die Benennung gibt es Regeln. Die Überwachung der Einhaltung der Regeln soll der IBAN-Validator übernehmen:
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+https://www.npmjs.com/package/iban-validator-js
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## Aufgabe 9 (Nur Klausurschreiber)
 
-## License
-
-Copyright © Microsoft Corporation All rights reserved.<br />
-Licensed under the MIT License. See LICENSE in the project root for license information.
+Der Gewünschte Betrag auf der Seite Geldanlegen soll automatisch auf das neue Konto eingezahlt werden. Wenn man dananch zurück auf die Kontenübersicht geht, wir der neue Betrag (also Anfangssaldo + Betrag aus Geldanlegen) angezeigt.

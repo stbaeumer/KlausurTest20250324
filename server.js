@@ -161,12 +161,12 @@ app.get('/agb', (req, res) => {
 	if(kunde.IstEingeloggt){
 
 		// Wenn die Zugangsdaten korrekt sind, dann wird die angesurfte Seite gerendert.
-		res.render('agb.ejs',{});
+		res.render('login.ejs',{});
 
 	}else{
 		
 		// Wenn die Zugangsdaten nicht korrekt sind, dann wird die login-Seite gerendert.
-		res.render('login.ejs',{
+		res.render('agb.ejs',{
 			Meldung: "Melden Sie sich zuerst an."
 		});
 	}
